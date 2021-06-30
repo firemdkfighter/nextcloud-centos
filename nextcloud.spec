@@ -510,6 +510,7 @@ fi
 - Update to 21.0.2, fixes RHBZ 1977202 / CVE-2021-22915
 - Include php-fpm config in httpd subpackage
 - Set php memory limit to 512MB (RHBZ 1933529)
+- Add Referrer-policy no-referrer to nginx config (RHBZ 1933530)
 
 * Wed Feb 24 2021 Christopher Engelhard <ce@lcts.de> - 21.0.0-2
 - Drop dependency on php-imap. Fixes RHBZ #1933023
