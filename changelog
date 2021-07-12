@@ -1,0 +1,126 @@
+* Tue Jul  6 2021 Christopher Engelhard <ce@lcts.de> - 22.0.0-1
+- Update to 22.0.0
+
+* Wed Jun 30 2021 Christopher Engelhard <ce@lcts.de> - 21.0.2-1
+- Update to 21.0.2, fixes RHBZ 1977202 / CVE-2021-22915
+- Include php-fpm config in httpd subpackage
+- Set php memory limit to 512MB (RHBZ 1933529)
+- Add Referrer-policy no-referrer to nginx config (RHBZ 1933530)
+
+* Wed Feb 24 2021 Christopher Engelhard <ce@lcts.de> - 21.0.0-2
+- Drop dependency on php-imap. Fixes RHBZ #1933023
+
+* Wed Feb 24 2021 Christopher Engelhard <ce@lcts.de> - 21.0.0-1
+- Update to 21.0.0
+
+* Sat Feb 20 2021 Christopher Engelhard <ce@lcts.de> - 20.0.7-1
+- Update to 20.0.7
+
+* Tue Jan 26 2021 Fedora Release Engineering <releng@fedoraproject.org> - 20.0.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
+
+* Sat Jan 16 2021 Christopher Engelhard <ce@lcts.de> - 20.0.5-1
+- Update to 20.0.5
+
+* Mon Dec 28 2020 Christopher Engelhard <ce@lcts.de> - 20.0.4-2
+- Remove duplicate dependencies on database drivers
+- Remove syslinux related stuff, as these are included in
+  the syslinux policy
+- Add Provides: for bundled libraries
+
+* Thu Dec 17 2020 Christopher Engelhard <ce@lcts.de> - 20.0.4-1
+- Update to 20.0.4
+
+* Thu Dec 10 2020 Christopher Engelhard <ce@lcts.de> - 20.0.3-1
+- Update to 20.0.3
+
+* Thu Nov 19 2020 Christopher Engelhard <ce@lcts.de> - 20.0.2-1
+- Update to 20.0.2
+
+* Sat Nov 14 2020 Christopher Engelhard <ce@lcts.de> - 20.0.2-0.1.rc1
+- Update to 20.0.2RC1
+
+* Wed Nov 11 2020 Christopher Engelhard <ce@lcts.de> - 20.0.1-3
+- Remove CentOS/RHEL 7 support from spec file
+
+* Tue Nov 10 2020 Christopher Engelhard <ce@lcts.de> - 20.0.1-2
+- Add dependencies on php-cli (for occ) and php-process (for posix)
+- Remove unneeded BR on php-cli
+- Add patch to allow updates across more than one major version
+
+* Mon Oct 26 2020 Christopher Engelhard <ce@lcts.de> - 20.0.1-1
+- Update to Nextcloud 20.0.1
+
+* Sun Oct 11 2020 Christopher Engelhard <ce@lcts.de> - 20.0.0-1
+- Update to Nextcloud 20.0.0
+
+* Tue Jul 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 19.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
+
+* Sun Jun 28 2020 Ivan Chavero <ichavero@redhat.com> - 19.0.0-1
+- Update to Nextcloud 19.0.0
+- Update licenses
+
+* Thu Apr 30 2020 Ivan Chavero <ichavero@redhat.com> - 18.0.4-1
+- Update to Nextcloud 18.0.4
+
+* Sat Feb 08 2020 Ivan Chavero <ichavero@redhat.com> - 18.0.0-1
+- Refactor spec file
+- Update to Nextcoud 18.0.0
+
+* Wed Jan 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 10.0.4-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
+* Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 10.0.4-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
+* Fri Feb 01 2019 Fedora Release Engineering <releng@fedoraproject.org> - 10.0.4-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+
+* Wed Jan  9 2019 Remi Collet <remi@remirepo.net> - 10.0.4-6
+- drop dependency on php-password-compat #1658730
+- allow php-smbclient 1.0.0 #1663672
+- allow doctrine/dbal 2.x
+
+* Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 10.0.4-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
+* Thu Feb 08 2018 Fedora Release Engineering <releng@fedoraproject.org> - 10.0.4-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
+
+* Wed Jul 26 2017 Fedora Release Engineering <releng@fedoraproject.org> - 10.0.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
+
+* Sat Mar 25 2017 Shawn Iwinski <shawn.iwinski@gmail.com> - 10.0.4-2
+- Add max versions to dependencies to limit each to 1 major version
+- Update some dependencies to use php-composer(*) instead of package names
+- Prepare for php-composer(google/apiclient) version 2 and new version 1 package
+
+* Tue Feb 28 2017 James Hogarth <james.hogarth@gmail.com> - 10.0.4-1
+- update to 10.0.4
+- Add migration from owncloud documentation
+- Add systemd timer for background jobs
+
+* Wed Feb 08 2017 James Hogarth <james.hogarth@gmail.com> - 10.0.3-1
+- update to 10.0.3
+
+* Thu Oct 06 2016 James Hogarth <james.hogarth@gmail.com> - 10.0.1-1
+- update to 10.0.1
+
+* Mon Aug 01 2016 James Hogarth <james.hogarth@gmail.com> - 9.0.53-5
+- Use lua to have a common srpm between epel7 and fedora
+
+* Fri Jul 29 2016 James Hogarth <james.hogarth@gmail.com> - 9.0.53-4
+- Don't unbundle javascript on EPEL7 due to versioning issues
+
+* Fri Jul 29 2016 James Hogarth <james.hogarth@gmail.com> - 9.0.53-3
+- Unbundle javascript libraries from core where possible
+
+* Tue Jul 26 2016 James Hogarth <james.hogarth@gmail.com> - 9.0.53-2
+- Update the autoloader to use the path from the approved package
+
+* Tue Jul 19 2016 James Hogarth <james.hogarth@gmail.com> - 9.0.53-1
+- New release 9.0.53
+
+* Thu Jul 14 2016 James Hogarth <james.hogarth@gmail.com> - 9.0.52-1
+- Initial nextcloud build
