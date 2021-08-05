@@ -1,9 +1,10 @@
 Name:           nextcloud
-Version:        22.0.0
+Version:        22.1.0
 Release:        %autorelease
 Summary:        Private file sync and share server
 License:        AGPLv3+ and MIT and BSD and ASL 2.0 and WTFPL and CC-BY-SA and GPLv3+ and Adobe
 URL:            http://nextcloud.com
+#Source0:        https://download.nextcloud.com/server/prereleases/%{name}-%{version}.tar.bz2
 Source0:        https://download.nextcloud.com/server/releases/%{name}-%{version}.tar.bz2
 
 # basic nextcloud config.php, nextcloud's
