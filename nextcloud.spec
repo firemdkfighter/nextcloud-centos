@@ -1,5 +1,5 @@
 Name:           nextcloud
-Version:        22.1.0
+Version:        24.0.2
 Release:        %autorelease
 Summary:        Private file sync and share server
 License:        AGPLv3+ and MIT and BSD and ASL 2.0 and WTFPL and CC-BY-SA and GPLv3+ and Adobe
@@ -85,33 +85,30 @@ Requires:       %{_sysconfdir}/pki/tls/certs/ca-bundle.crt
 
 # Bundled composer libraries
 # many of these can be unbundled
-Provides: bundled(php-composer(icewind/smb)) = 3.2.7
-Provides: bundled(php-composer(icewind/streams)) = 0.7.1
 Provides: bundled(php-composer(aws/aws-sdk-php)) = 3.171.21
 Provides: bundled(php-composer(bantu/ini-get-wrapper)) = 1.0.1
 Provides: bundled(php-composer(beberlei/assert)) = 3.3.0
 Provides: bundled(php-composer(brick/math)) = 0.9.1
-Provides: bundled(php-composer(christophwurst/id3parser)) = 0.1.1
-Provides: bundled(php-composer(composer/package-versions-deprecated)) = 1.11.99.1
+Provides: bundled(php-composer(christophwurst/id3parser)) = 0.1.4
+Provides: bundled(php-composer(cweagans/composer-patches)) = 1.7
 Provides: bundled(php-composer(deepdiver/zipstreamer)) = 2.0.0
 Provides: bundled(php-composer(deepdiver1975/tarstreamer)) = 2.0.0
 Provides: bundled(php-composer(doctrine/cache)) = 1.10.2
-Provides: bundled(php-composer(doctrine/dbal)) = 3.0.0
+Provides: bundled(php-composer(doctrine/dbal)) = 3.1.4
 Provides: bundled(php-composer(doctrine/event-manager)) = 1.1.1
 Provides: bundled(php-composer(doctrine/lexer)) = 1.2.1
-Provides: bundled(php-composer(egulias/email-validator)) = 2.1.25
+Provides: bundled(php-composer(egulias/email-validator)) = 3.1.1
 Provides: bundled(php-composer(fgrosse/phpasn1)) = 2.2.0
-Provides: bundled(php-composer(giggsey/libphonenumber-for-php)) = 8.12.16
+Provides: bundled(php-composer(giggsey/libphonenumber-for-php)) = 8.12.37
 Provides: bundled(php-composer(giggsey/locale)) = 1.9
-Provides: bundled(php-composer(guzzlehttp/guzzle)) = 7.2.0
+Provides: bundled(php-composer(guzzlehttp/guzzle)) = 7.4.0
 Provides: bundled(php-composer(guzzlehttp/promises)) = 1.4.0
 Provides: bundled(php-composer(guzzlehttp/psr7)) = 1.7.0
 Provides: bundled(php-composer(guzzlehttp/uri-template)) = 0.2.0
-Provides: bundled(php-composer(icewind/searchdav)) = 2.0.0
-Provides: bundled(php-composer(icewind/streams)) = 0.7.2
+Provides: bundled(php-composer(icewind/searchdav)) = 3.0
+Provides: bundled(php-composer(icewind/smb)) = 3.2.7
+Provides: bundled(php-composer(icewind/streams)) = 0.7.5
 Provides: bundled(php-composer(justinrainbow/json-schema)) = 5.2.10
-Provides: bundled(php-composer(league/flysystem)) = 1.1.3
-Provides: bundled(php-composer(league/mime-type-detection)) = 1.7.0
 Provides: bundled(php-composer(league/uri)) = 6.4.0
 Provides: bundled(php-composer(league/uri-interfaces)) = 2.2.0
 Provides: bundled(php-composer(microsoft/azure-storage-blob)) = 1.5.2
@@ -120,19 +117,19 @@ Provides: bundled(php-composer(mtdowling/jmespath.php)) = 2.6.0
 Provides: bundled(php-composer(nextcloud/lognormalizer)) = 1.0.0
 Provides: bundled(php-composer(nikic/php-parser)) = 4.10.4
 Provides: bundled(php-composer(opis/closure)) = 3.6.1
-Provides: bundled(php-composer(patchwork/jsqueeze)) = 2.0.5
 Provides: bundled(php-composer(pear/archive_tar)) = 1.4.12
 Provides: bundled(php-composer(pear/console_getopt)) = 1.4.3
 Provides: bundled(php-composer(pear/pear-core-minimal)) = 1.10.10
 Provides: bundled(php-composer(pear/pear_exception)) = 1.0.1
 Provides: bundled(php-composer(php-ds/php-ds)) = 1.3.0
-Provides: bundled(php-composer(php-http/guzzle7-adapter)) = 0.1.1
+Provides: bundled(php-composer(php-http/guzzle7-adapter)) = 1.0.0
 Provides: bundled(php-composer(php-http/httplug)) = 2.2.0
 Provides: bundled(php-composer(php-http/promise)) = 1.1.0
 Provides: bundled(php-composer(php-opencloud/openstack)) = 3.1.0
-Provides: bundled(php-composer(phpseclib/phpseclib)) = 2.0.30
-Provides: bundled(php-composer(pimple/pimple)) = 3.3.1
-Provides: bundled(php-composer(psr/container)) = 1.0.0
+Provides: bundled(php-composer(phpseclib/phpseclib)) = 2.0.32
+Provides: bundled(php-composer(pimple/pimple)) = 3.5.0
+Provides: bundled(php-composer(psr/container)) = 1.1.1
+Provides: bundled(php-composer(psr/event-dispatcher)) = 1.0
 Provides: bundled(php-composer(psr/http-client)) = 1.0.1
 Provides: bundled(php-composer(psr/http-factory)) = 1.0.1
 Provides: bundled(php-composer(psr/http-message)) = 1.0.1
@@ -141,19 +138,19 @@ Provides: bundled(php-composer(punic/punic)) = 1.6.5
 Provides: bundled(php-composer(ralouphie/getallheaders)) = 3.0.3
 Provides: bundled(php-composer(ramsey/collection)) = 1.1.1
 Provides: bundled(php-composer(ramsey/uuid)) = 4.1.1
-Provides: bundled(php-composer(sabre/dav)) = 4.1.4
+Provides: bundled(php-composer(sabre/dav)) = 4.2.1
 Provides: bundled(php-composer(sabre/event)) = 5.1.2
 Provides: bundled(php-composer(sabre/http)) = 5.1.1
 Provides: bundled(php-composer(sabre/uri)) = 2.2.1
 Provides: bundled(php-composer(sabre/vobject)) = 4.3.3
 Provides: bundled(php-composer(sabre/xml)) = 2.2.3
-Provides: bundled(php-composer(scssphp/scssphp)) = 1.4.1
+Provides: bundled(php-composer(scssphp/scssphp)) = 1.8.1
 Provides: bundled(php-composer(spomky-labs/base64url)) = 2.0.4
 Provides: bundled(php-composer(spomky-labs/cbor-php)) = 2.0.1
 Provides: bundled(php-composer(stecman/symfony-console-completion)) = 0.11.0
 Provides: bundled(php-composer(swiftmailer/swiftmailer)) = 6.2.5
-Provides: bundled(php-composer(symfony/console)) = 4.4.19
-Provides: bundled(php-composer(symfony/event-dispatcher)) = 4.4.19
+Provides: bundled(php-composer(symfony/console)) = 4.4.30
+Provides: bundled(php-composer(symfony/event-dispatcher)) = 4.4.30
 Provides: bundled(php-composer(symfony/event-dispatcher-contracts)) = 1.1.9
 Provides: bundled(php-composer(symfony/polyfill-ctype)) = 1.22.0
 Provides: bundled(php-composer(symfony/polyfill-iconv)) = 1.22.0
@@ -164,10 +161,10 @@ Provides: bundled(php-composer(symfony/polyfill-mbstring)) = 1.22.0
 Provides: bundled(php-composer(symfony/polyfill-php72)) = 1.22.0
 Provides: bundled(php-composer(symfony/polyfill-php73)) = 1.22.0
 Provides: bundled(php-composer(symfony/polyfill-php80)) = 1.22.0
-Provides: bundled(php-composer(symfony/process)) = 4.4.19
-Provides: bundled(php-composer(symfony/routing)) = 4.4.19
+Provides: bundled(php-composer(symfony/process)) = 4.4.30
+Provides: bundled(php-composer(symfony/routing)) = 4.4.30
 Provides: bundled(php-composer(symfony/service-contracts)) = 2.2.0
-Provides: bundled(php-composer(symfony/translation)) = 4.4.19
+Provides: bundled(php-composer(symfony/translation)) = 4.4.41
 Provides: bundled(php-composer(symfony/translation-contracts)) = 2.3.0
 Provides: bundled(php-composer(thecodingmachine/safe)) = 1.3.3
 Provides: bundled(php-composer(web-auth/cose-lib)) = 3.3.1
@@ -179,7 +176,7 @@ Provides:       bundled(openiconic-fonts) = 1.0.0
 # jscolor bundled via themeing app
 Provides:       bundled(jscolor) = 2.0.4
 # jquery-ui-multiselect bundled via user_ldap app
-Provides:       bundled(jquery-ui-multiselect) = 0.3.1
+Provides:       bundled(jquery-ui-multiselect) = 1.13
 # zxcvbn bundled via core
 Provides:       bundled(zxcvbn) = 4.4.2
 
@@ -278,12 +275,14 @@ cp %{SOURCE303} MIGRATION.fedora
 find -wholename "*/composer/LICENSE" -exec mv {} composer-LICENSE \;
 
 # find all remaining using "find -name '*LICENCE*' -name '*LICENSE*' -o -name '*COPYING*' | sort"
+mv dist/*LICENSE.txt .
 mv 3rdparty/aws/aws-sdk-php/LICENSE.md aws-LICENSE.md
 mv 3rdparty/bantu/ini-get-wrapper/LICENSE bantu-LICENSE
 mv 3rdparty/beberlei/assert/LICENSE beberlei-LICENSE
 mv 3rdparty/brick/math/LICENSE brick-LICENSE
 mv 3rdparty/christophwurst/id3parser/LICENSE christophwurst-LICENSE
 mv 3rdparty/composer/package-versions-deprecated/LICENSE composer-LICENSE
+mv 3rdparty/cweagans/composer-patches/LICENSE.md cweagans-LICENSE
 mv 3rdparty/deepdiver1975/tarstreamer/LICENSE deepdiver1975-LICENSE
 mv 3rdparty/deepdiver/zipstreamer/COPYING deepdiver-COPYING
 mv 3rdparty/doctrine/cache/LICENSE doctrine-LICENSE
@@ -299,8 +298,6 @@ mv 3rdparty/guzzlehttp/psr7/LICENSE guzzlehttp-LICENSE
 mv 3rdparty/guzzlehttp/uri-template/LICENSE.md guzzlehttp-LICENSE
 mv 3rdparty/icewind/searchdav/LICENSE icewind-LICENSE
 mv 3rdparty/justinrainbow/json-schema/LICENSE justinrainbow-LICENSE
-mv 3rdparty/league/flysystem/LICENSE league-LICENSE
-mv 3rdparty/league/mime-type-detection/LICENSE league-LICENSE
 mv 3rdparty/league/uri-interfaces/LICENSE league-LICENSE
 mv 3rdparty/league/uri/LICENSE league-LICENSE
 mv '3rdparty/LICENSE INFO' 3rdparty-LICENSE_INFO
@@ -310,8 +307,6 @@ mv 3rdparty/mtdowling/jmespath.php/LICENSE mtdowling-LICENSE
 mv 3rdparty/nextcloud/lognormalizer/COPYING lognormalizer-LICENSE
 mv 3rdparty/nikic/php-parser/LICENSE nikic-LICENSE
 mv 3rdparty/opis/closure/LICENSE opis-LICENSE
-mv 3rdparty/patchwork/jsqueeze/LICENSE.ASL20 patchwork-LICENSE-APACHE
-mv 3rdparty/patchwork/jsqueeze/LICENSE.GPLv2 patchwork-LICENSE-GPL
 mv 3rdparty/pear/console_getopt/LICENSE pear-LICENSE
 mv 3rdparty/pear/pear_exception/LICENSE pear-LICENSE
 mv 3rdparty/php-ds/php-ds/LICENSE php-ds-LICENSE
@@ -343,6 +338,7 @@ mv 3rdparty/spomky-labs/base64url/LICENSE spomky-labs-LICENSE
 mv 3rdparty/spomky-labs/cbor-php/LICENSE spomky-labs-LICENSE
 mv 3rdparty/stecman/symfony-console-completion/LICENCE stecman-LICENSE
 mv 3rdparty/symfony/console/LICENSE symfony-LICENSE
+mv 3rdparty/symfony/deprecation-contracts/LICENSE symfony-LICENSE
 mv 3rdparty/symfony/event-dispatcher-contracts/LICENSE symfony-LICENSE
 mv 3rdparty/symfony/event-dispatcher/LICENSE symfony-LICENSE
 mv 3rdparty/symfony/polyfill-ctype/LICENSE symfony-LICENSE
@@ -364,33 +360,51 @@ mv 3rdparty/web-auth/cose-lib/LICENSE web-auth-LICENSE
 mv 3rdparty/web-auth/metadata-service/LICENSE web-auth-LICENSE
 mv 3rdparty/web-auth/webauthn-lib/LICENSE web-auth-LICENSE
 mv apps/activity/js/activity-sidebar.js.LICENSE.txt activity-sidebar.js-LICENSE
+mv apps/activity/js/activity-dashboard.js.LICENSE.txt activity-dashboard.js-LICENSE
 mv apps/circles/LICENSE circles-LICENSE
 mv apps/cloud_federation_api/LICENSE cloud_federation_api-LICENSE
 mv apps/files_external/3rdparty/icewind/smb/LICENSE.txt icewind-LICENSE
 mv apps/files_external/3rdparty/icewind/streams/LICENCE icewind-LICENSE
+mv apps/files_pdfviewer/COPYING files_pdfviewer-COPYING
 mv apps/files_pdfviewer/js/files_pdfviewer-workersrc.js.LICENSE.txt files_pdfviewer-workersrc.js-LICENSE
 mv apps/files_pdfviewer/js/files_pdfviewer-main.js.LICENSE.txt files_pdfviewer-main.js-LICENSE
 mv apps/files_pdfviewer/js/files_pdfviewer-public.js.LICENSE.txt files_pdfviewer-public.js-LICENSE
 mv apps/files_pdfviewer/js/pdfjs/LICENSE js-pdfjs-LICENSE
 mv apps/files_pdfviewer/js/pdfjs/web/cmaps/LICENSE js-pdfjs-cmaps-LICENSE
+mv apps/files_pdfviewer/js/pdfjs/web/standard_fonts/LICENSE_LIBERATION js-pdfjs-LICENSE_LIBERATION
+mv apps/files_pdfviewer/js/pdfjs/web/standard_fonts/LICENSE_FOXIT js-pdfjs-LICENSE_FOXIT
 mv apps/files_rightclick/COPYING files_rightclick-COPYING
 mv apps/files_rightclick/LICENSE files_rightclick-LICENSE
-mv apps/logreader/build/main.js.LICENSE.txt logreader-main.js-LICENSE
+mv apps/files_videoplayer/js/files_videoplayer-main.js.LICENSE.txt files_videoplayer-main.js-LICENSE
+mv apps/files_videoplayer/js/files_videoplayer-vendors-node_modules_video_js_dist_video_es_js.js.LICENSE.txt files_videoplayer-node_modules_video_js_dist_video_es_js.js-LICENSE
+mv apps/firstrunwizard/js/firstrunwizard-main.js.LICENSE.txt firstrunwizard-LICENSE
+mv apps/logreader/js/logreader-main.js.LICENSE.txt logreader-main.js-LICENSE
 mv apps/nextcloud_announcements/COPYING nextcloud_announcements-COPYING
 mv apps/notifications/COPYING notifications-LICENSE
 mv apps/notifications/js/notifications-main.js.LICENSE.txt notifications-main.js-LICENSE
+mv apps/notifications/js/notifications-settings.js.LICENSE.txt notifications-main.js-LICENSE
 mv apps/password_policy/LICENSE password_policy-LICENSE
 mv apps/password_policy/js/password_policy-settings.js.LICENSE.txt password_policy-settings.js-LICENSE
 mv apps/photos/COPYING photos-COPYING
 mv apps/photos/js/photos-main.js.LICENSE.txt photos-main.js-LICENSE
+mv apps/photos/js/photos-node_modules_nextcloud_moment_node_modules_moment_locale_sync_recursive_-src_patchedRequest_j-3cb869.js.LICENSE.txt photos-node_modules_nextcloud_moment_node_modules_moment_locale_sync_recursive_-LICENSE
+mv apps/photos/js/photos-vendors-node_modules_nextcloud_moment_dist_index_js-node_modules_nextcloud_moment_node_module-ca085a.js.LICENSE.txt photos-vendors1.js-LICENSE
+mv apps/photos/js/photos-vendors-node_modules_nextcloud_moment_dist_index_js-node_modules_moment_locale_af_js-node_mod-100548.js.LICENSE.txt photos-vendors2.js-LICENSE
+mv apps/photos/js/photos-src_views_Albums_vue.js.LICENSE.txt photos-src_views_Albums_vue.js-LICENSE
+mv apps/photos/js/photos-src_patchedRequest_js-src_views_Tags_vue.js.LICENSE.txt photos-src_patchedRequest_js.js-LICENSE
+mv apps/photos/js/photos-vendors-node_modules_nextcloud_vue_dist_Components_ActionButton_js-node_modules_nextcloud_vue-208129.js.LICENSE.txt photos-vendors3.js-LICENSE
+mv apps/photos/js/photos-src_patchedRequest_js-node_modules_moment_locale_sync_recursive_-src_views_Timeline_vue.js.LICENSE.txt photos-src_patchedRequest_js.js-LICENSE
+mv apps/photos/js/photos-src_mixins_GridConfig_js-src_utils_CancelableRequest_js-src_components_EmptyContent_vue-src_c-45f6cf.js.LICENSE.txt photos-src_mixins_GridConfig_js.js-LICENSE
+mv apps/photos/js/photos-vendors-node_modules_webdav_dist_node_index_js-node_modules_webdav_dist_node_request_js.js.LICENSE.txt photos-vendors4.js-LICENSE
 mv apps/privacy/COPYING privacy-COPYING
 mv apps/privacy/js/privacy-main.js.LICENSE.txt privacy-main.js-LICENSE
 mv apps/recommendations/LICENSE recommendations-LICENSE
 mv apps/serverinfo/COPYING serverinfo-LICENSE
 mv apps/survey_client/COPYING survey_client-LICENSE
 mv apps/text/COPYING text-COPYING
+mv apps/text/js/*.js.LICENSE.txt .
 mv apps/theming/js/3rdparty/jscolor/LICENSE.txt jscolor-LICENSE
-mv apps/user_ldap/vendor/ui-multiselect/MIT-LICENSE js-jqueryui-multiselect-LICENSE
+mv apps/user_ldap/js/vendor/ui-multiselect/MIT-LICENSE js-jqueryui-multiselect-LICENSE
 mv apps/viewer/COPYING viewer-COPYING
 mv apps/viewer/js/viewer-main.js.LICENSE.txt viewer-main.js-LICENSE
 mv COPYING nextcloud-LICENSE
